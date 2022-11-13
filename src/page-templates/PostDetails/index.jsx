@@ -7,7 +7,6 @@ import { CommentForm } from 'components/CommentForm';
 import { GQL_POST } from 'graphql/queries/post';
 import { useMutation, useQuery } from '@apollo/client';
 import { Loading } from 'components/Loading';
-import { DefaultError } from 'components/DefaultError';
 import { Helmet } from 'react-helmet';
 import { useAuthVar } from 'graphql/reactive-var/auth';
 import { GQL_CREATE_COMMENT } from 'graphql/mutations/comment';

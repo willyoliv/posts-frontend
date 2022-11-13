@@ -1,6 +1,5 @@
 import { useMutation } from '@apollo/client';
 import { AuthForm } from 'components/AuthForm';
-import { DefaultError } from 'components/DefaultError';
 import { Loading } from 'components/Loading';
 import { GQL_LOGIN } from 'graphql/mutations/auth';
 import { Helmet } from 'react-helmet';
@@ -41,7 +40,6 @@ export const Login = () => {
   };
 
   if (loading) return <Loading loading={loading} />;
-  // if (error) return <DefaultError error={error} />;
 
   console.log(data);
 
