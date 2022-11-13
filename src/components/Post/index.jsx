@@ -22,7 +22,6 @@ export const Post = ({
   title,
   body,
   user,
-  // comments = [],
   createdAt,
   loggedUserId = '',
   loading = false,
@@ -56,6 +55,11 @@ export const Post = ({
     if (!shouldDelete) return;
 
     await deletePost();
+    console.log('window.location.href ', window.location.href);
+    console.log('window.location.origin ', window.location.origin);
+    if (window.location.href !== window.location.origin) {
+      history.push('/');
+    }
   };
 
   if (loading) return <Loading loading={loading} />;

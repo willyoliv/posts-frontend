@@ -18,8 +18,16 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": [
+    "react"
+  ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     /* Essa regra indica que ao invés de erro, se torna apenas um warning */
     "no-unused-vars": [
       "warn",

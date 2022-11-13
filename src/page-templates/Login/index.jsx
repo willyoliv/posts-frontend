@@ -13,11 +13,11 @@ export const Login = () => {
   const [login, { loading, data, error }] = useMutation(GQL_LOGIN, {
     onError() {},
     onCompleted(data) {
-      authDataManager.setVar(
-        loginFormVar.get().userName,
-        data.login.userId,
-        true,
-      );
+      authDataManager.set({
+        userName: loginFormVar.get().userName,
+        userId: data.login.userId,
+        isLoggedIn: true,
+      });
       window.location.href = '/';
     },
   });

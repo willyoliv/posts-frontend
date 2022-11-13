@@ -50,9 +50,6 @@ export const PostDetails = () => {
   );
 
   if (loading) return <Loading loading={loading} />;
-  // if (error || commentError) {
-  //   return <DefaultError error={error || commentError} />;
-  // }
 
   const post = data?.post;
 
