@@ -15,6 +15,11 @@ export const Home = () => {
   const { loading, error, data, fetchMore, previousData } = useQuery(
     GQL_POSTS,
     {
+      onError() {},
+      errorPolicy: 'all',
+      context: {
+        fromHome: 'this came from Home component',
+      },
       notifyOnNetworkStatusChange: true,
     },
   );
