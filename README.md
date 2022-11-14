@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Posts - frontend</h1>
 
-## Available Scripts
+![home-posts](https://user-images.githubusercontent.com/40326598/201685067-0ce6c903-f963-4062-8a85-1a00fcfd99c9.png)
+---
 
-In the project directory, you can run:
+<p align="justify">
+  Frontend construído a partir das aulas do <a href="https://www.udemy.com/course/curso-de-graphql-e-apollo-server-client/">Curso de GraphQL e Apollo Server + Apollo Client</a>. É um projeto simples mas explora bastantes conceitos acerca do uso do GraphQL,  Apollo Client e React. O projeto é um pequeno sistema de blog onde é possível criar, editar, deletar e comentar posts.
+</p>
 
-### `npm start`
+<p align="center">
+ <a href="#sobre-o-projeto">Sobre o projeto</a> |
+ <a href="#layout">Layout</a> | 
+ <a href="#como-usar">Como usar</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h4 align="center">
+	 Status: Finalizado
+</h4>
+ 
+### Sobre o projeto💻
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ Este é o repositório da aplicação frontend. Nele está contidas todas as telas do projeto. 
 
-### `npm test`
+#### Feature
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [X] Login
+- [X] Logout
+- [X] Create Post
+- [X] Edit Post
+- [X] Delete Post
+- [X] Create Comment
 
-### `npm run build`
+#### Tecnologias🚀
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [X] [Node](https://nodejs.org/pt-br/).
+- [x] [Reactjs](https://reactjs.org/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Padronização de código:
 
-### `npm run eject`
+- [x] [ESLint](https://eslint.org/);
+- [x] [Prettier](https://prettier.io/).
+___
+### Layout
+#### Login
+![login](https://user-images.githubusercontent.com/40326598/201689248-4050e5cd-1259-4d07-8bf2-74471e9d26ba.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Home
+![home-screen](https://user-images.githubusercontent.com/40326598/201689425-a7890f90-b1de-4152-bf04-d4dda7e1975d.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Criar Post
+![new-post-screen](https://user-images.githubusercontent.com/40326598/201689723-7be114a5-7247-4f27-8397-1afcc47b9494.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Editar Post
+![edit-post-screen](https://user-images.githubusercontent.com/40326598/201690094-35649253-8819-4f9e-93b3-43dbdc2fabb0.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Visualizar Post
+![Captura de tela 2022-11-14 112034](https://user-images.githubusercontent.com/40326598/201691077-c47c480b-c72e-4604-b2b7-143bdbb06895.png)
 
-## Learn More
+___
+### Como usar
+#### Pré-requisitos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Obs:** Este projeto depende diretamente do projeto [Posts backend](https://github.com/willyoliv/posts-backend-graphql) , sendo necessário executar o server primeiro e configurar o arquivo `.env` com a url em que o projeto server está funcionando.
 
-### Code Splitting
+##### Clone este repositório
+```bash
+git clone https://github.com/willyoliv/posts-frontend.git
+```
+##### Após clonar, acesse as pastas do projeto no terminal/cmd e instale as dependências
+```bash
+cd posts-frontend
+npm install
+# ou npm i
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##### Para executar o projeto rode o seguinte comando
+```bash
+npm run dev
+```
 
-### Analyzing the Bundle Size
+**Obs:** O projeto irá por padrão rodar em `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
