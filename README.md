@@ -37,6 +37,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [X] [Node](https://nodejs.org/pt-br/).
 - [x] [Reactjs](https://reactjs.org/).
+- [X] [GraphQL](https://graphql.org/).
+- [X] [Apollo Client](https://www.apollographql.com/docs/react/)
 
 ##### Padronização de código:
 
