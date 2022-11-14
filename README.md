@@ -81,7 +81,8 @@ npm install
 
 ##### Para executar o projeto rode o seguinte comando
 ```bash
-npm run dev
+npm run start
+# ou yarn start
 ```
 
 **Obs:** O projeto irá por padrão rodar em `http://localhost:3000`
