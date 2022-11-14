@@ -66,7 +66,7 @@ ___
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-**Obs:** Este projeto depende diretamente do projeto [Posts backend](https://github.com/willyoliv/posts-backend-graphql) , sendo necessário executar o server primeiro e configurar o arquivo `.env` com a url em que o projeto server está funcionando.
+**Obs:** Este projeto depende diretamente do projeto [Posts backend](https://github.com/willyoliv/posts-backend-graphql) , sendo necessário executar o server primeiro e configurar o arquivo `.env` baseado no arquivo `.env.example` com a url em que o projeto backend está funcionando.
 
 ##### Clone este repositório
 ```bash
